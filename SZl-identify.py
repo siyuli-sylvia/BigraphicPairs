@@ -220,9 +220,6 @@ class SZlSolver:
     # ---------- 图信息与绘制 ----------
 
     def print_graph_info(self, detailed: bool = False) -> None:
-        print("图信息：")
-        print(f"- 顶点数: {len(self.vertices)}")
-        print(f"- 顶点列表: {self.vertices}")
         total_edges = sum(eb.k for eb in self.edge_bundles)
         print(f"- 边总数（计重）: {total_edges}")
         print("- 顶点度(计重):")
